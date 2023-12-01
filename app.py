@@ -30,8 +30,6 @@ def respond():
        """
        # send the welcoming message
        bot.sendMessage(chat_id=chat_id, text=bot_welcome, reply_to_message_id=msg_id)
-
-
    else:
        try:
            # clear the message we got from any non alphabets
@@ -45,7 +43,7 @@ def respond():
            # if things went wrong
            bot.sendMessage(chat_id=chat_id, text="There was a problem in the name you used, please enter different name", reply_to_message_id=msg_id)
 
-   return 'ok'
+   return 'success'
 
 if __name__== '__main__':
     app.run(threaded=True)
